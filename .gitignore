@@ -1,0 +1,155 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ============================================================
+# Virtual environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# Environment variables / secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# IDE / editor
+# ============================================================
+.vscode/
+.idea/
+
+# ============================================================
+# Operating system
+# ============================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================================
+# Python packaging / build artifacts
+# ============================================================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ============================================================
+# Datasets
+# ============================================================
+datasets/raw/
+datasets/downloads/
+datasets/cache/
+
+datasets/merged_dataset/train/images/
+datasets/merged_dataset/train/labels/
+datasets/merged_dataset/valid/images/
+datasets/merged_dataset/valid/labels/
+datasets/merged_dataset/test/images/
+datasets/merged_dataset/test/labels/
+
+datasets/**/*.cache
+
+# ============================================================
+# Model files / checkpoints / exports
+# ============================================================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+
+models/weights/
+models/exports/
+models/training_runs/
+models/checkpoints/
+
+# ============================================================
+# Training / experiment outputs
+# ============================================================
+runs/
+mlruns/
+experiments/results/
+wandb/
+lightning_logs/
+
+events.out.tfevents.*
+
+# ============================================================
+# Generated reports
+# ============================================================
+reports/metrics/
+reports/figures/
+reports/training_reports/
+
+# ============================================================
+# Runtime outputs / logs / temporary files
+# ============================================================
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+# ============================================================
+# Generated surveillance media
+# ============================================================
+data/
+output/
+outputs/
+captures/
+recordings/
+videos/
+clips/
+snapshots/
+
+# ============================================================
+# Local databases / runtime state
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================
+# Docker / local overrides
+# ============================================================
+docker-compose.override.yml
+
+# ============================================================
+# Miscellaneous
+# ============================================================
+*.bak
+*.swp
+*~
+
+# Local person/vehicle dataset
+datasets/person_vehicle/dataset/images/
+datasets/person_vehicle/dataset/labels/
+
+# Ignore dataset payloads for all datasets
+datasets/**/images/
+datasets/**/labels/
+
+# Common downloaded dataset artifacts
+datasets/**/*.zip
+datasets/**/*.tar
+datasets/**/*.tar.gz
+datasets/**/*.cache

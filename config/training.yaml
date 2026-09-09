@@ -1,0 +1,28 @@
+project:
+  name: camera_surveillance
+  experiment_name: baseline_yolo11
+
+dataset:
+  yaml_path: datasets/merged_dataset/data.yaml
+
+model:
+  pretrained_weights: yolo11n.pt
+
+training:
+  epochs: 1
+  image_size: 640
+  batch_size: 8
+  device: auto
+  workers: 4
+  patience: 20
+  optimizer: auto
+  seed: 42
+  deterministic: true
+  cache: false
+  pretrained: true
+  close_mosaic: 10
+
+output:
+  project_dir: models/training_runs
+  run_name: baseline_yolo11n
+  save_period: 10

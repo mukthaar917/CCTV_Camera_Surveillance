@@ -1,0 +1,110 @@
+YOLO DATASET MERGE REPORT
+================================================================================
+
+Output: C:\Camera_Surveillance\datasets\merged_dataset
+
+FINAL CLASSES
+--------------------------------------------------------------------------------
+0: vehicle
+1: person
+2: fire
+3: smoke
+4: animal
+5: package
+
+OVERALL STATISTICS
+--------------------------------------------------------------------------------
+detection_rows_processed: 25884
+images_copied: 12322
+images_seen: 12322
+label_files_written: 12322
+segmentation_rows_converted: 240
+valid_annotation_rows: 26124
+
+ANNOTATIONS PER FINAL CLASS
+--------------------------------------------------------------------------------
+0 (vehicle): 1655
+1 (person): 2386
+2 (fire): 18352
+3 (smoke): 3327
+4 (animal): 238
+5 (package): 166
+
+STATISTICS BY SPLIT
+--------------------------------------------------------------------------------
+[train]
+  detection_rows_processed: 18594
+  images_copied: 8886
+  images_seen: 8886
+  label_files_written: 8886
+  segmentation_rows_converted: 207
+  valid_annotation_rows: 18801
+  class_counts:
+    0 (vehicle): 1331
+    1 (person): 1919
+    2 (fire): 12886
+    3 (smoke): 2304
+    4 (animal): 206
+    5 (package): 155
+
+[valid]
+  detection_rows_processed: 5108
+  images_copied: 2423
+  images_seen: 2423
+  label_files_written: 2423
+  segmentation_rows_converted: 21
+  valid_annotation_rows: 5129
+  class_counts:
+    0 (vehicle): 324
+    1 (person): 467
+    2 (fire): 3627
+    3 (smoke): 685
+    4 (animal): 20
+    5 (package): 6
+
+[test]
+  detection_rows_processed: 2182
+  images_copied: 1013
+  images_seen: 1013
+  label_files_written: 1013
+  segmentation_rows_converted: 12
+  valid_annotation_rows: 2194
+  class_counts:
+    0 (vehicle): 0
+    1 (person): 0
+    2 (fire): 1839
+    3 (smoke): 338
+    4 (animal): 12
+    5 (package): 5
+
+STATISTICS BY SOURCE DATASET
+--------------------------------------------------------------------------------
+[person_vehicle]
+  detection_rows_processed: 4041
+  images_copied: 2000
+  images_seen: 2000
+  label_files_written: 2000
+  test_missing: 1
+  valid_annotation_rows: 4041
+
+[package]
+  detection_rows_processed: 166
+  images_copied: 102
+  images_seen: 102
+  label_files_written: 102
+  valid_annotation_rows: 166
+
+[fire_smoke]
+  detection_rows_processed: 21677
+  images_copied: 10000
+  images_seen: 10000
+  label_files_written: 10000
+  segmentation_rows_converted: 2
+  valid_annotation_rows: 21679
+
+[animals]
+  images_copied: 220
+  images_seen: 220
+  label_files_written: 220
+  segmentation_rows_converted: 238
+  valid_annotation_rows: 238

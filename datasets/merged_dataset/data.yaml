@@ -1,0 +1,15 @@
+path: C:/Camera_Surveillance/datasets/merged_dataset
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 6
+
+names:
+  0: vehicle
+  1: person
+  2: fire
+  3: smoke
+  4: animal
+  5: package
